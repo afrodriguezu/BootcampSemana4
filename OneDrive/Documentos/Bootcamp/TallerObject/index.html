@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Solicitud de Pedido</h1>
+    </div>
+    
+
+    <!-- Contenedor Padre -> La clase container le da dimensiones al div-->
+    <div class="container mt-5 border border-danger">
+
+        <!-- Solicitar Datos-->
+        <section class="border mt-2 mb-2">
+            <!-- Formulario para solicitar información con input--> 
+            <form>
+                <div class="row mt-2 mb-2 ms-2 me-2">
+                    <div class="col-4">
+                        <input type="text" class="form-control" 
+                            placeholder="Nombre del producto" 
+                            name="NombreProducto" id="NombreProducto">
+                    </div>
+                    <div class="col-4">
+                        <input type="number" class="form-control" 
+                            placeholder="Costo del producto" 
+                            name="Costo" id="Costo">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" 
+                            placeholder="Descripcion de producto" 
+                            name="descripcion" id="descripcion">
+                    </div>
+                    <div class="col-2">
+                        <input type="button" 
+                            class="btn btn-success" 
+                            value="Enviar Datos" onclick="addItem()">
+                    </div>
+                </div>    
+            </form>
+        </section>
+
+        <!-- Mostrar Datos-->
+        <section class="border mt-2 mb-2">
+            <div class="mt-2 mb-2 ms-2 me-2" id="items-list">
+                No hay productos 
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/object.js"></script>
+
+</body>
+</html>
